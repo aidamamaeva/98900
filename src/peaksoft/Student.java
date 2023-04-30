@@ -45,6 +45,14 @@ public class Student {
         this.yearOfBirth = age;
     }
 
+    public int getYearOfBirth() {
+        return yearOfBirth;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
+    }
+
     @Override
     public String toString() {
         return "Student" +

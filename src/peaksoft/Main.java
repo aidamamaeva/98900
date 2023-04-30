@@ -21,8 +21,16 @@ public class Main {
      * *
      */
     public static void main(String[] args) {
-
-
+        Student [] students = new Student[10];
+     students[0] = new Student(1l, "aida", "mamaeva", 2002);
+     students[1] = new Student(2l, "leisan", "ismailova", 2017);
+     students [2]= new Student(3l, "arsen", "ismailov", 2009);
+     Service service = new ServiceImpl(students);
+     service.updateStudent(0l,"aidaa", "mamaevaa");
+     service.getStudentById(2l);
+     service.getAllStudents();
+     service.getName("leisan");
+     service.getCountAge(6);
     }
 
 }
